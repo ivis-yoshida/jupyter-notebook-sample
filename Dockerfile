@@ -2,6 +2,7 @@ FROM jupyter/datascience-notebook
 
 RUN pip install papermill[all]
 RUN pip install jupyter jupyterhub ethercalc-python
+RUN pip install openpyxl
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
